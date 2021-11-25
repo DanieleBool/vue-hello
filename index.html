@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue hello</title>
+</head>
+<body>
+    <style>#container{width: 800px; margin: auto; margin-top: 50px;};</style>
+    <div id="container">
+        <!-- <h1>{{message}}</h1> -->
+        <h1 v-html="message" class="title"></h1>
+        <!-- <style>.title{text-transform: uppercase;}</style> -->
+        <p>{{message2}}</p>
+        <img v-bind:src="image" width="750px" alt="wave">
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
